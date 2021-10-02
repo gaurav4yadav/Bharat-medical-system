@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+ 
+    <nav  style="padding :55px; background:linear-gradient(to right,rgb(0, 0, 0), rgb(8, 247, 255))">
+        <h style="font-size: 50px ; color:white;">Bharat Medical System</h>
+        <p style="color: white;">Swasth Bharat Ayushmaan Bharat </p>
+
+        <p style="float: right; color: azure; font-size: 20px;"><marquee>Initiative by Power Coders</marquee></p>
+
+    </nav>
+    <div id="d1">
+
+
+        <a href="index.html">Home</a>
+        <a href="patient.html">Patient</a>
+        <a href="doctor.html">Doctor</a>
+        <a href="verify.php">Verification</a>
+        <a href="admin.html">Admin Panel</a>
+        <<a href="donate.html" text-align:right>Donation Box</a>
+        
+        
+        </div>
+
+        
+</head>
+<body>
+    <center>
+        <form>
+            <fieldset style="margin-left: 10%;margin-top:5% ;margin-bottom:30px; ">
+                <legend style="font-size: 20px;"><b>Login Panel</b></legend>
+
+                <img src="login.png">
+                <br>
+                <label >Username :</label>
+                <input class="input" type="text" id="usn">
+                <br>
+               <br>
+               <label >Password :</label>
+                <input class="input" type="password" id="pwd" autocomplete="on">
+                <br>
+                <br>
+                <br>
+
+                <button class="btn" onclick="myFunction()"><b>Login</b></button>
+                <br>
+
+                <script>
+                    function myFunction() {
+                      
+                        var usna ="kom";
+                        usna= document.getElementById("usn").value;
+                        var pwda = document.getElementById("pwd").value;
+                      
+                 
+                    
+                    
+                    if(usna==="admin" && pwda==="admin")
+                    {
+                    console.log("Successfully logined");
+                
+                   
+                    window.open('add.html', '_blank');
+  
+                    }
+                    else
+                    {alert("Invalid username and password");
+                    console.log("asdf");
+                    }
+                    
+                    }
+                    </script>
+                    
+                    
+                    
+            </fieldset>
+        </form>
+
+    </center>
+
+
+
+
+</body>
+<footer style="padding:60px; background:linear-gradient(to right, black,rgb(8, 247, 255) );">
+<p style="text-align: center;font-size: 2vw; color: white;">
+    Copyright reserved @2021
+</p>
+</footer>
+</html>

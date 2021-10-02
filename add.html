@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" type="text/css" href="add.css"> 
+       <link rel="php" type="text/php" href="addp.php">
+
+ 
+    <nav  style="padding :55px; background:linear-gradient(to right,rgb(0, 0, 0), rgb(8, 247, 255))">
+        <h style="font-size: 50px ; color:white;">Bharat Medical System</h>
+        <p style="color: white;">Swasth Bharat Ayushmaan Bharat </p>
+
+        <p style="float: right; color: azure;"><marquee>Initiative by power coders</marquee></p>
+
+    </nav>
+
+
+    
+    
+</head>
+<body>
+
+    <fieldset>
+<legend>ADD Pateint</legend>
+    <h2 style="text-align: center;">Add Patient</h2>
+    <form  method="post" action="addp.php">
+    <label for="name">Full Name :&nbsp &nbsp</label>
+<input class="input"  type="text" id="fn" name="fn"required>
+<br>
+
+<br>
+<label for="name">Username  : &nbsp &nbsp</label>
+<input class="input"   type="text" id="un" name="un" required>
+<br>
+<br>
+<label for="name">Password   : &nbsp &nbsp &nbsp </label>
+<input  class="input"  type="text" id="pwd" name="pwd" required>
+<br>
+
+<br>
+<label for="dob">Date of Birth &nbsp</label>
+<input class="input"  type="date" id="dob" name="dob" required>
+<br>
+<br>
+
+<label for="mob">Mobile No.  &nbsp &nbsp</label>
+
+<input class="input" type="number" id="mob" name="mob" required>
+<br>
+<br>
+
+    <center><input class="btn" type="submit" name="save" value="submit"></center>
+
+    </form>
+
+</fieldset>
+
+<br>
+<br>
+<hr style="background-color: black;padding: 30px;">
+<br>
+<br>
+
+<fieldset>
+    <legend>ADD Doctor</legend>
+        <h2 style="text-align: center;">Add Doctor</h2>
+        <form  method="post" action="addd.php">
+        <label for="name">Full Name :&nbsp &nbsp</label>
+    <input class="input"  type="text" name="fnd" required>
+    <br>
+    
+    <br>
+    <label for="name">Username  : &nbsp &nbsp</label>
+    <input class="input"   type="text" name="und" required>
+    <br>
+    <br>
+    <label for="name">Password   : &nbsp &nbsp &nbsp </label>
+    <input  class="input"  type="text" name="pwdd" required>
+    <br>
+    
+    <br>
+    <label for="dob">Date of Birth &nbsp</label>
+    <input class="input"  type="date" name="dobd" required>
+    <br>
+    <br>
+    
+    <label for="mob">Mobile No.  &nbsp &nbsp</label>
+    
+    <input class="input" type="number" name="mobd" required>
+    <br>
+    <br>
+    <label for="mob">Registration no.  &nbsp &nbsp</label>
+    
+    <input class="input" type="number" name="regd" required>
+    <br>
+    <br>
+<br>
+
+    
+        <center><input class="btn" type="submit" name="saved" value="submit"></center>
+     
+    
+        </form>
+    
+    </fieldset>
+    
+
+
+</body>
+<footer style="padding:60px; background:linear-gradient(to right, black,rgb(8, 247, 255) );">
+<p style="text-align: center;font-size: 2vw; color: white;">
+    Copyright reserved @2021
+</p>
+</footer>
+</html>
